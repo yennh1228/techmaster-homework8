@@ -15,10 +15,10 @@ class _Ex45State extends State<Ex45> {
         ClipRRect(
           borderRadius: BorderRadius.circular(200),
           child: Container(
-            width: 200,
-            height: 200,
-            child: Image.network(
-              'https://i.pinimg.com/originals/04/bf/6c/04bf6cd98e221c2b53b500831c892b74.png',
+            width: MediaQuery.of(context).size.width,
+            height: MediaQuery.of(context).size.width,
+            child: Image.asset(
+              'images/avata.png',
               fit: BoxFit.cover,
             ),
           ),
